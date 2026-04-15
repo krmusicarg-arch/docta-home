@@ -83,7 +83,7 @@ export default function App() {
 
   return (
     <div className="font-body selection:bg-secondary selection:text-on-secondary min-h-screen w-full bg-black text-[#E2E2E2]">
-      <header className="fixed top-0 left-0 w-full z-50 flex justify-center py-10 pointer-events-none">
+      <header className="absolute top-0 left-0 w-full z-50 flex justify-center py-10 pointer-events-none">
         <h1 className="text-4xl md:text-6xl font-headline font-black tracking-tighter text-on-background uppercase drop-shadow-2xl pointer-events-auto">
           DOCTA BOSS
         </h1>
@@ -138,7 +138,7 @@ export default function App() {
               <img
                 alt="Country Logo"
                 className="max-w-[250px] md:max-w-[400px] w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(247,189,72,0.3)]"
-                src="/logo Country.png"
+                src="/logo Country3.png"
                 onMouseEnter={handleCountryMouseEnter}
                 onMouseLeave={handleCountryMouseLeave}
                 onClick={handleCountryClick}
