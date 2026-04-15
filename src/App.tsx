@@ -138,7 +138,7 @@ export default function App() {
               <img
                 alt="Country Logo"
                 className="max-w-[250px] md:max-w-[400px] w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(247,189,72,0.3)]"
-                src="/logo Country.jpeg"
+                src="/logo Country.png"
                 onMouseEnter={handleCountryMouseEnter}
                 onMouseLeave={handleCountryMouseLeave}
                 onClick={handleCountryClick}
