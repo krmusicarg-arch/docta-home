@@ -111,7 +111,10 @@ export default function App() {
                 onMouseLeave={handleLogoMouseLeave}
                 onClick={handleLogoClick}
               />
-              <button className="px-12 py-5 bg-white text-black font-headline font-black uppercase tracking-[0.2em] hover:bg-secondary hover:text-on-secondary transition-all duration-300 flex items-center gap-4 group shadow-2xl relative z-20">
+              <button 
+                onClick={() => window.location.href = 'https://doctaboss.vercel.app/'}
+                className="px-12 py-5 bg-white text-black font-headline font-black uppercase tracking-[0.2em] hover:bg-secondary hover:text-on-secondary transition-all duration-300 flex items-center gap-4 group shadow-2xl relative z-20"
+              >
                 INGRESAR
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </button>
