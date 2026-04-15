@@ -77,19 +77,11 @@ export default function App() {
         </h1>
       </header>
 
-      <main className="min-h-screen w-full flex flex-col md:flex-row relative split-container pt-28 md:pt-0">
+      <main className="min-h-screen w-full flex flex-col md:flex-row relative pt-28 md:pt-0 pb-24 md:pb-0">
         {/* LEFT HALF: TRIBUTE (Rock Aesthetic) */}
-        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden border-b md:border-b-0 md:border-r border-white/5 min-h-[50vh] flex flex-col items-center justify-center">
-          {/* Background Image */}
-          <div className="absolute inset-0 saturate-150 contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-1000">
-            <img
-              alt="Gritty black and white close-up of a vintage electric guitar and amplifier on a dark stage with dramatic smoke and spotlights"
-              className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=2070&auto=format&fit=crop"
-            />
-          </div>
+        <section className="relative flex-1 group cursor-pointer border-b md:border-b-0 md:border-r border-white/5 min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center transition-all duration-500 hover:bg-white/5">
           {/* Content Centered */}
-          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8 min-h-[50vh]">
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8">
             <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
               <img
                 alt="Docta Boss Logo"
@@ -108,17 +100,9 @@ export default function App() {
         </section>
 
         {/* RIGHT HALF: COUNTRY (Ochre Aesthetic) */}
-        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden min-h-[50vh] flex flex-col items-center justify-center">
-          {/* Background Image */}
-          <div className="absolute inset-0 saturate-150 brightness-75 group-hover:scale-105 transition-transform duration-1000">
-            <img
-              alt="Wide cinematic shot of a dusty western landscape at sunset with a lone acoustic guitar leaning against a rustic wooden fence"
-              className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop"
-            />
-          </div>
+        <section className="relative flex-1 group cursor-pointer min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center transition-all duration-500 hover:bg-[#1a1505]">
           {/* Content Centered */}
-          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8 min-h-[50vh]">
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8">
             <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
               <img
                 alt="Country Logo"
