@@ -70,18 +70,18 @@ export default function App() {
   }, []);
 
   return (
-    <div className="font-body selection:bg-secondary selection:text-on-secondary h-screen w-full bg-black text-[#E2E2E2] overflow-hidden">
+    <div className="font-body selection:bg-secondary selection:text-on-secondary min-h-screen w-full bg-black text-[#E2E2E2]">
       <header className="fixed top-0 left-0 w-full z-50 flex justify-center py-10 pointer-events-none">
         <h1 className="text-4xl md:text-6xl font-headline font-black tracking-tighter text-on-background uppercase drop-shadow-2xl pointer-events-auto">
           DOCTA BOSS
         </h1>
       </header>
 
-      <main className="h-screen w-full flex flex-col md:flex-row overflow-hidden relative split-container">
+      <main className="min-h-screen w-full flex flex-col md:flex-row relative split-container pt-28 md:pt-0">
         {/* LEFT HALF: TRIBUTE (Rock Aesthetic) */}
-        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden border-b md:border-b-0 md:border-r border-white/5">
+        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden border-b md:border-b-0 md:border-r border-white/5 min-h-[50vh] flex flex-col items-center justify-center">
           {/* Background Image */}
-          <div className="absolute inset-0 grayscale contrast-125 brightness-50 group-hover:scale-105 transition-transform duration-1000">
+          <div className="absolute inset-0 saturate-150 contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-1000">
             <img
               alt="Gritty black and white close-up of a vintage electric guitar and amplifier on a dark stage with dramatic smoke and spotlights"
               className="w-full h-full object-cover"
@@ -89,8 +89,8 @@ export default function App() {
             />
           </div>
           {/* Content Centered */}
-          <div className="absolute inset-0 flex items-center justify-center p-8 z-10">
-            <div className="flex flex-col items-center w-full gap-[15vh] pt-12">
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8 min-h-[50vh]">
+            <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
               <img
                 alt="Docta Boss Logo"
                 className="max-w-[250px] md:max-w-[400px] w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
@@ -108,9 +108,9 @@ export default function App() {
         </section>
 
         {/* RIGHT HALF: COUNTRY (Ochre Aesthetic) */}
-        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden">
+        <section className="split-pane relative flex-1 group cursor-pointer overflow-hidden min-h-[50vh] flex flex-col items-center justify-center">
           {/* Background Image */}
-          <div className="absolute inset-0 brightness-50 sepia-[.3] group-hover:scale-105 transition-transform duration-1000">
+          <div className="absolute inset-0 saturate-150 brightness-75 group-hover:scale-105 transition-transform duration-1000">
             <img
               alt="Wide cinematic shot of a dusty western landscape at sunset with a lone acoustic guitar leaning against a rustic wooden fence"
               className="w-full h-full object-cover"
@@ -118,8 +118,8 @@ export default function App() {
             />
           </div>
           {/* Content Centered */}
-          <div className="absolute inset-0 flex items-center justify-center p-8 z-10">
-            <div className="flex flex-col items-center w-full gap-[15vh] pt-12">
+          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8 min-h-[50vh]">
+            <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
               <img
                 alt="Country Logo"
                 className="max-w-[250px] md:max-w-[400px] w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(247,189,72,0.3)]"
@@ -138,12 +138,11 @@ export default function App() {
       </main>
 
       <footer className="fixed bottom-0 left-0 w-full z-50 flex flex-col items-center gap-4 py-8 px-8 pointer-events-none">
-        <p className="text-[#C6C6C7] font-body text-[10px] tracking-widest uppercase opacity-60">© 2024 DOCTA BOSS. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p className="text-[#C6C6C7] font-body text-[10px] tracking-widest uppercase opacity-60 drop-shadow-md">© 2024 DOCTA BOSS. TODOS LOS DERECHOS RESERVADOS.</p>
       </footer>
 
       {/* Decorative Elements */}
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-32 bg-white/20 hidden md:block z-40"></div>
-      <div className="fixed top-1/2 left-0 w-full h-[1px] bg-white/10 md:hidden z-40"></div>
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-32 bg-white/20 hidden md:block z-40 pointer-events-none"></div>
     </div>
   );
 }
