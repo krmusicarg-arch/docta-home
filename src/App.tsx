@@ -79,7 +79,15 @@ export default function App() {
 
       <main className="min-h-screen w-full flex flex-col md:flex-row relative pt-28 md:pt-0 pb-24 md:pb-0">
         {/* LEFT HALF: TRIBUTE (Rock Aesthetic) */}
-        <section className="relative flex-1 group cursor-pointer border-b md:border-b-0 md:border-r border-white/5 min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center transition-all duration-500 hover:bg-white/5">
+        <section className="relative flex-1 group cursor-pointer border-b md:border-b-0 md:border-r border-white/5 min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center overflow-hidden transition-all duration-500">
+          {/* Background Image */}
+          <div className="absolute inset-0 saturate-150 contrast-125 brightness-[0.35] group-hover:brightness-50 group-hover:scale-105 transition-all duration-1000">
+            <img
+              alt="Empty rock concert stage with moody lighting and smoke"
+              className="w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1485686531765-a80a4704a3ab?q=80&w=2070&auto=format&fit=crop"
+            />
+          </div>
           {/* Content Centered */}
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8">
             <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
@@ -100,7 +108,15 @@ export default function App() {
         </section>
 
         {/* RIGHT HALF: COUNTRY (Ochre Aesthetic) */}
-        <section className="relative flex-1 group cursor-pointer min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center transition-all duration-500 hover:bg-[#1a1505]">
+        <section className="relative flex-1 group cursor-pointer min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center overflow-hidden transition-all duration-500">
+          {/* Background Image */}
+          <div className="absolute inset-0 saturate-150 contrast-125 brightness-[0.35] group-hover:brightness-50 group-hover:scale-105 transition-all duration-1000">
+            <img
+              alt="Classic western country town in the US with wooden facades"
+              className="w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1601614539317-5e6ebabb6d89?q=80&w=2070&auto=format&fit=crop"
+            />
+          </div>
           {/* Content Centered */}
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-8">
             <div className="flex flex-col items-center w-full gap-8 md:gap-[15vh]">
