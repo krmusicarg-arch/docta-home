@@ -24,7 +24,13 @@ export default function App() {
   };
 
   const handleLogoMouseEnter = () => {
-    getAudio().play();
+    const audio = getAudio();
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Ignorar error de autoplay (requiere previa interacción del usuario)
+      });
+    }
   };
 
   const handleLogoMouseLeave = () => {
@@ -47,7 +53,13 @@ export default function App() {
   }, []);
 
   const handleCountryMouseEnter = () => {
-    getAudioCountry().play();
+    const audio = getAudioCountry();
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Ignorar error de autoplay (requiere previa interacción del usuario)
+      });
+    }
   };
 
   const handleCountryMouseLeave = () => {
@@ -85,7 +97,7 @@ export default function App() {
             <img
               alt="Empty rock concert stage with moody lighting and smoke"
               className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1485686531765-a80a4704a3ab?q=80&w=2070&auto=format&fit=crop"
+              src="/fondorock2.png"
             />
           </div>
           {/* Content Centered */}
@@ -114,7 +126,7 @@ export default function App() {
             <img
               alt="Classic western country town in the US with wooden facades"
               className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1601614539317-5e6ebabb6d89?q=80&w=2070&auto=format&fit=crop"
+              src="/fondo-country.jpeg"
             />
           </div>
           {/* Content Centered */}
